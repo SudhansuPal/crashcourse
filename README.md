@@ -38,17 +38,19 @@ transistor up.
 | 05 | [registers-memory](05-registers-memory/) | Latch → register → addressable RAM | 02 | ✅ done |
 | 06 | [cpu](06-cpu/) | Fetch–decode–execute over RAM + registers + ALU | 04, 05 | ✅ done |
 | 07 | [instructions](07-instructions/) | An assembler + ISA the CPU runs | 06 | ✅ done |
-| 08 | data-structures | Array, linked list, stack, queue, hash map, tree | — | planned |
-| 09 | algorithms | Sorting, searching, and Big-O in practice | 08 | planned |
-| 10 | file-systems | Block device, inodes, directories, allocation | 08 | planned |
-| 11 | compression | Run-length encoding and Huffman coding | 08 | planned |
-| 12 | networking | Packets, checksums, a tiny handshake simulation | — | planned |
-| 13 | cryptography | Caesar → XOR → Diffie–Hellman → toy RSA | 03 | planned |
-| 14 | machine-learning | A perceptron trained with gradient descent | 03 | planned |
+| 08 | [data-structures](08-data-structures/) | Array, linked list, stack, queue, hash map, tree | — | ✅ done |
+| 09 | [algorithms](09-algorithms/) | Sorting, searching, and Big-O in practice | 08 | ✅ done |
+| 10 | [file-systems](10-file-systems/) | Block device, inodes, directories, allocation | 08 | ✅ done |
+| 11 | [compression](11-compression/) | Run-length encoding and Huffman coding | 08 | ✅ done |
+| 12 | [networking](12-networking/) | Packets, checksums, reliable delivery over a lossy channel | — | ✅ done |
+| 13 | [cryptography](13-cryptography/) | Caesar → XOR → Diffie–Hellman → toy RSA | 03 | ✅ done |
+| 14 | [machine-learning](14-machine-learning/) | A perceptron + gradient descent | 03 | ✅ done |
 
-> **Modules 01–07 form a complete vertical slice**: a single transistor, built
-> up through gates, arithmetic, an ALU, and memory, into a working CPU that runs
-> programs written in an assembly language with its own assembler.
+> **All 14 modules are complete.** The course runs as one continuous climb: a
+> single transistor, built up through gates, arithmetic, an ALU, and memory, into
+> a working CPU with its own assembler (01–07) — then the software concepts that
+> run on such machines: data structures, algorithms, file systems, compression,
+> networking, cryptography, and a program that learns (08–14).
 
 > The order intentionally puts **gates before arithmetic and the ALU**, and the
 > **CPU before the instruction set**, so every layer can be built from the one
