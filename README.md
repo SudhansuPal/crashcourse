@@ -29,22 +29,26 @@ transistor up.
 
 ## Module index
 
-| #  | Module | Concept | Builds on |
-|----|--------|---------|-----------|
-| 01 | [boolean-logic](01-boolean-logic/) | AND / OR / NOT / XOR from first principles | — |
-| 02 | logic-gates | Gates from a transistor (switch) model | 01 |
-| 03 | binary-arithmetic | Binary, two's complement, ripple-carry adder | 02 |
-| 04 | alu | An Arithmetic Logic Unit wired from gates | 02, 03 |
-| 05 | registers-memory | Latch → register → addressable RAM | 02 |
-| 06 | cpu | Fetch–decode–execute over RAM + registers + ALU | 04, 05 |
-| 07 | instructions | An assembler + ISA the CPU runs | 06 |
-| 08 | data-structures | Array, linked list, stack, queue, hash map, tree | — |
-| 09 | algorithms | Sorting, searching, and Big-O in practice | 08 |
-| 10 | file-systems | Block device, inodes, directories, allocation | 08 |
-| 11 | compression | Run-length encoding and Huffman coding | 08 |
-| 12 | networking | Packets, checksums, a tiny handshake simulation | — |
-| 13 | cryptography | Caesar → XOR → Diffie–Hellman → toy RSA | 03 |
-| 14 | machine-learning | A perceptron trained with gradient descent | 03 |
+| #  | Module | Concept | Builds on | Status |
+|----|--------|---------|-----------|--------|
+| 01 | [boolean-logic](01-boolean-logic/) | AND / OR / NOT / XOR from first principles | — | ✅ done |
+| 02 | [logic-gates](02-logic-gates/) | Gates from a transistor (switch) model | 01 | ✅ done |
+| 03 | [binary-arithmetic](03-binary-arithmetic/) | Binary, two's complement, ripple-carry adder | 02 | ✅ done |
+| 04 | [alu](04-alu/) | An Arithmetic Logic Unit wired from gates | 02, 03 | ✅ done |
+| 05 | [registers-memory](05-registers-memory/) | Latch → register → addressable RAM | 02 | ✅ done |
+| 06 | [cpu](06-cpu/) | Fetch–decode–execute over RAM + registers + ALU | 04, 05 | ✅ done |
+| 07 | [instructions](07-instructions/) | An assembler + ISA the CPU runs | 06 | ✅ done |
+| 08 | data-structures | Array, linked list, stack, queue, hash map, tree | — | planned |
+| 09 | algorithms | Sorting, searching, and Big-O in practice | 08 | planned |
+| 10 | file-systems | Block device, inodes, directories, allocation | 08 | planned |
+| 11 | compression | Run-length encoding and Huffman coding | 08 | planned |
+| 12 | networking | Packets, checksums, a tiny handshake simulation | — | planned |
+| 13 | cryptography | Caesar → XOR → Diffie–Hellman → toy RSA | 03 | planned |
+| 14 | machine-learning | A perceptron trained with gradient descent | 03 | planned |
+
+> **Modules 01–07 form a complete vertical slice**: a single transistor, built
+> up through gates, arithmetic, an ALU, and memory, into a working CPU that runs
+> programs written in an assembly language with its own assembler.
 
 > The order intentionally puts **gates before arithmetic and the ALU**, and the
 > **CPU before the instruction set**, so every layer can be built from the one
