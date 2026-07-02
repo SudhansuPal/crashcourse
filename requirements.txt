@@ -1,0 +1,5 @@
+# Runtime: none. Every concept is implemented from scratch using only the
+# Python standard library, so the modules themselves have zero dependencies.
+#
+# The only tool we use is pytest, and only for running the unit tests.
+pytest>=7.0
