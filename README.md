@@ -1,5 +1,8 @@
 # crash-course-cs-implemented
 
+I have been wanting to make a commit on the Computer Science Crash Course videos
+since I watched them last summer.
+
 Turning the core ideas from **Crash Course Computer Science** into working,
 runnable, *from-scratch* code — one concept at a time, building each layer on
 the one below it.
